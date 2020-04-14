@@ -19,7 +19,10 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
-    "ami_name": "mattermost-amazonlinux2-{{timestamp}}"
+    "ami_name": "mattermost-amazonlinux2-{{timestamp}}",
+    "Tags" : [
+          {"Key" : "Name", "Value" : "CPMO-April-2020-RHEL7-{{timestamp}}"
+        ]
   }],
   "provisioners":  [
         {
