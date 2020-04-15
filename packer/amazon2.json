@@ -19,9 +19,9 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
-    "ami_name": "mattermost-amazonlinux2-{{timestamp}}",
+    "ami_name": "CPMO-CSS-amazonlinux2-{{timestamp}}",
     "Tags" : [
-          {"Name" : "CPMO-April-2020-AMAZON-{{timestamp}}"}
+          {"Name" : "CPMO-CSS-April-2020-AMAZON-{{timestamp}}"}
 	  
         ]
   }],
