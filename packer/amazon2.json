@@ -3,14 +3,12 @@
     "aws_access_key": "",
     "aws_secret_key": ""
   },
-  "builders": [
-
-    {
+  "builders": [{
     "type": "amazon-ebs",
     "access_key": "{{user `aws_access_key`}}",
     "secret_key": "{{user `aws_secret_key`}}",
-    "region" : "us-east-2",
-	  "source_ami_filter": {
+    "region": "us-west-1",
+    "source_ami_filter": {
       "filters": {
         "virtualization-type": "hvm",
         "name": "amzn2-ami-minimal-hvm-2.0.*-x86_64-ebs",
@@ -21,13 +19,9 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
-    "ami_name": "CPMO-CSS-amazonlinux2-{{timestamp}}",
-    "Tags" : [
-          {"Name" : "CPMO-CSS-April-2020-AMAZON-{{timestamp}}"}
-	  
-        ]
-  },
-	  
+    "ami_name": "mattermost-amazonlinux2-{{timestamp}}",
+     "Tags": {"Name":"Amazone-AMI"}
+  }],
   "provisioners":  [
         {
             "type": "shell",
